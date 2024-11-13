@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="/assets/css/auth/login.css" />
+    <link rel="icon" type="image/png" href="/assets/imgs/icon_shop.ico" />
+    <script src="/jsquery-3.6.0.min/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/auth/login.js"></script>
+  </head>
+  <body>
+    <!-- banner -->
+    <div id="top_banner"></div>
+    <!-- header_menu -->
+    <div style="position: sticky; top: 0; z-index: 1000" id="header_menu"></div>
+    <!-- form login -->
+    <div id="container_form_login">
+      <div>
+        <h1>Đăng nhập tài khoản</h1>
+        <p>
+          Bạn chưa có tài khoản?
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="/assets/views/auth/register.html">đăng ký tại đây!</a>
+        </p>
+      </div>
+      <!-- form group -->
+      <div>
+        <div class="form-group">
+          <label for="username">Tên đăng nhập</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Tên đăng nhập"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Mật khẩu</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Nhập mật khẩu"
+            required
+          />
+        </div>
+        <p>Quên mật khẩu? <a style="color: rgb(255, 8, 0);" href="">nhấn vào đây!</a></h5>
+        <button id="login-button" type="submit" class="btn-submit">Đăng Nhập</button>
+      </div>
+      <div class="or-divider"><h4>Hoặc đăng nhập bằng</h3></div>
+        <!-- login gg or fb -->
+        <div id="login_gg_fb"></div>
+    </div>
+    <!-- quên mật khẩu -->
+<div id="container_form_forgot_password" style="display: none;">
+  <div>
+    <h1>Lấy lại mật khẩu</h1>
+    <p>Vui lòng nhập email để khôi phục mật khẩu</p>
+  </div>
+  <div class="form-group">
+    <label for="forgot-email">Email</label>
+    <input
+      type="email"
+      id="forgot-email"
+      name="email"
+      placeholder="Nhập email của bạn"
+      required
+    />
+  </div>
+  <button type="submit" class="btn-submit">Gửi yêu cầu</button>
+  <p>
+    <a id="back-to-login" href="#" style="color: rgb(255, 8, 0);">
+      Quay lại đăng nhập
+    </a>
+  </p>
+</div>
+    <!-- footer -->
+    <div id="footer"></div>
+  </body>
+</html>

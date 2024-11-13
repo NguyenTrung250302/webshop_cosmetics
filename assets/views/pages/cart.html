@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <script src="/jsquery-3.6.0.min/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/pages/cart.js"></script>
+    <link rel="stylesheet" href="/assets/css/pages/cart.css" />
+    <link rel="icon" type="image/png" href="/assets/imgs/icon_shop.ico" />
+  </head>
+  <body>
+    <!-- banner -->
+    <div id="top_banner"></div>
+    <!-- header_menu -->
+    <div style="position: sticky; top: 0; z-index: 1000" id="header_menu"></div>
+    <!-- body cart -->
+    <div id="container_cart">
+      <!-- hiển thị khi không có sản phẩm nào trong giỏ hàng -->
+      <div id="backgorund_cart">
+        <img
+          style="align-items: center"
+          src="/assets/imgs/pages/cart_empty_background.png"
+        />
+        <div>
+          <h2>"Hổng" có gì trong giỏ hết</h1>
+          <p>Về trang cửa hàng để chọn mua sản phẩm bạn nhé!!</p>
+        </div>
+        <button id="back_home_page" class="btn_back_shop">mua sắm ngay!</button>
+      </div>
+      <!-- hiển thị nếu như có sản phẩm trong giỏ hàng -->
+      <div id="body_cart">
+        <div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer"></div>
+  </body>
+</html>

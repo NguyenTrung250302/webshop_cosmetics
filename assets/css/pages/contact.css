@@ -1,0 +1,155 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  outline: none;
+}
+a {
+  color: rgb(17, 16, 16);
+  transition: transform 0.3 ease;
+}
+a:hover {
+  color: #db3a55;
+}
+p,
+h1,
+h2 {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.container-contact {
+  background-color: #fdfeffec;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+.contact-heading {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+
+  /* Heading màu gradient */
+  background: -webkit-linear-gradient(
+    left,
+    rgb(157, 0, 255),
+    rgb(186, 58, 82),
+    rgb(3, 66, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-contact {
+  padding: 30px 0 0 0 0;
+}
+
+.form-row-contact {
+  display: flex;
+  margin: 32px 0;
+}
+
+.form-row-contact .input-data-contact {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.form-row-contact .textarea {
+  height: 70px;
+}
+
+.input-data-contact input,
+.textarea textarea {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.textarea textarea {
+  resize: none;
+  padding-top: 10px;
+}
+
+/* *------------- */
+/* Chuyển động khi nhấp vào input */
+.input-data-contact input:focus ~ label,
+.textarea textarea:focus ~ label,
+.input-data-contact input:valid ~ label,
+.textarea textarea:valid ~ label {
+  transform: translateY(-20px);
+  color: rgb(229, 103, 125);
+  font-size: 14px;
+}
+
+.input-data-contact label {
+  position: absolute;
+  bottom: 10px;
+  font-size: 16px;
+  pointer-events: none;
+
+  /* Chuyển động mượt hơn */
+  transition: all 0.32s ease;
+}
+
+/* *---------------- */
+
+.textarea label {
+  width: 100%;
+  bottom: 30px;
+  background: #fff;
+}
+
+/* div underline chứa thông tin người dùng */
+.underline-contact {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+/* ----------------- */
+/* Set cho màu ở border-bottom chuyển động từ giữa lan ra 2 bên */
+.underline-contact::before,
+.underline-contact::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(229, 103, 125, 0.706);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.45s ease;
+}
+
+.input-data-contact input:focus ~ .underline-contact::before,
+.textarea textarea:focus ~ .underline-contact::before,
+.input-data-contact input:valid ~ .underline-contact::before,
+.textarea textarea:valid ~ .underline-contact::before {
+  transform: scaleX(1);
+}
+/* ---------------------- */
+
+/* Submit */
+.btn-submit-contact {
+  width: 20% !important;
+  color: rgb(255, 255, 255) !important;
+  border: none !important;
+  border-radius: 10px !important;
+  background-color: rgb(116, 127, 230);
+  cursor: pointer;
+}
+
+.btn-submit-contact:hover {
+  background-color: #db3a55dc;
+}

@@ -1,0 +1,38 @@
+/* btn login google & fb */
+
+.btn-social-login {
+  display: flex;
+  align-items: center; /* Căn giữa theo trục dọc */
+  justify-content: center;
+  gap: 10px; /* Khoảng cách giữa biểu tượng và chữ */
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  line-height: 1; /* Loại bỏ khoảng cách thừa */
+}
+
+.btn-social-login.google {
+  background: #fff;
+  color: #555;
+  border: 1px solid #ddd;
+}
+
+.btn-social-login.google:hover {
+  background: #db3a55;
+  color: #fff;
+}
+
+.btn-social-login.facebook {
+  background: #1876f2ee;
+  color: #fff;
+  border: none;
+}
+
+.btn-social-login.facebook:hover {
+  background: #db3a55;
+}

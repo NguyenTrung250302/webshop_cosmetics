@@ -1,0 +1,55 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+a {
+  color: rgb(17, 16, 16);
+  transition: transform 0.3 ease;
+}
+a:hover {
+  color: #db3a55;
+}
+p,
+h1,
+h2 {
+  text-align: center;
+  margin: 5px 0;
+}
+/* cart */
+#container_cart {
+  width: 100%;
+  height: 500px;
+}
+
+#backgorund_cart {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.btn_back_shop {
+  width: 170px;
+  height: 40px;
+  font-size: 16px;
+  display: grid;
+  border: 2px solid salmon; /* Đặt độ dày border lớn hơn để rõ ràng */
+  place-items: center;
+  border-radius: 25px; /* Tăng độ bo tròn của border */
+  cursor: pointer;
+  background-color: transparent; /* Nền trong suốt khi không hover */
+  color: rgb(247, 98, 82); /* Giữ màu chữ giống màu border */
+  font-weight: bold; /* Làm chữ đậm hơn */
+  transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động khi hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ để nút nổi bật hơn */
+}
+
+.btn_back_shop:hover {
+  background-color: #db3a55e5; /* Thêm màu nền khi hover */
+  color: #fff; /* Đổi màu chữ thành trắng khi hover */
+  transform: translateY(-2px); /* Thêm hiệu ứng di chuyển nhẹ khi hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Bóng đổ đậm hơn khi hover */
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>right_menu_header</title>
+  </head>
+  <style scoped>
+    .menu-list {
+      list-style-type: none;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      margin: 0 10px;
+    }
+    .menu-item {
+      font-size: 16px;
+      font-family: "Arial", sans-serif;
+    }
+    .fa-solid {
+      width: 30px;
+      margin: 0 5px;
+    }
+  </style>
+  <body>
+    <!-- /assets/views/components/menu_bar.html -->
+    <nav class="menu-bar">
+      <ul class="menu-list">
+        <li>
+          <img
+            class="fa-solid"
+            src="/assets//imgs/components/phone-icon.webp"
+          />
+          <a href="/assets/views/pages/contact.html" class="menu-item"
+            >Hỗ trợ 19002631</a
+          >
+        </li>
+        <li>
+          <img
+            class="fa-solid"
+            src="/assets/imgs/components/account-icon.webp"
+          />
+          <a href="/assets/views/auth/login.html" class="menu-item"
+            >Tài khoản</a
+          >
+        </li>
+        <li>
+          <img class="fa-solid" src="/assets/imgs/components/cart-icon.webp" />
+          <a href="/assets/views/pages/cart.html" class="menu-item">Giỏ hàng</a>
+        </li>
+        <li>
+          <img
+            class="fa-solid"
+            src="/assets/imgs/components/policy_header_image_3.webp"
+          />
+          <a href="/assets//views/pages/check_order.html" class="menu-item"
+            >Kiểm tra đơn hàng</a
+          >
+        </li>
+        <li>
+          <img
+            class="fa-solid"
+            src="/assets/imgs/components/policy_header_image_4.webp"
+          />
+          <a href="/assets//views/pages/store_system.html" class="menu-item"
+            >Hệ thống cửa hàng</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

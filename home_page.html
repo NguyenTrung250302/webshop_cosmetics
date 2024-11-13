@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ThuyDuongshop</title>
+    <link rel="icon" type="image/png" href="/assets/imgs/icon_shop.ico" />
+    <script src="/jsquery-3.6.0.min/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/components.js"></script>
+    <script src="/dom.js"></script>
+  </head>
+  <style>
+    * {
+      margin: 0 auto;
+      padding: 0 auto;
+      text-decoration: none;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    a {
+      color: rgb(17, 16, 16);
+      transition: transform 0.3 ease;
+    }
+    a:hover {
+      color: #db3a55;
+    }
+    p,
+    h1,
+    h2 {
+      text-align: center;
+      margin: 5px 0;
+    }
+  </style>
+  <body>
+    <header>
+      <!-- banner -->
+      <div id="top_banner"></div>
+      <!-- header_menu -->
+      <div
+        style="position: sticky; top: 0; z-index: 1000"
+        id="header_menu"
+      ></div>
+      <!-- categories -->
+      <div id="categories"></div>
+      <!-- slider -->
+      <div id="slider">
+    </header>
+    <!-- main content -->
+    <main class="body_display_products"></main>
+    <footer>
+      <!-- footer -->
+      <div id="footer"></div>
+    </footer>
+  </body>
+</html>

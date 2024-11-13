@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Thuy Duong</title>
+  </head>
+  <style scoped>
+    .container {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    @keyframes FadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .panel {
+      position: relative;
+      height: 80vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 50px;
+      color: white;
+      cursor: pointer;
+      flex: 1;
+      margin: 10px;
+      animation: FadeIn ease-out 1.7s;
+      transition: flex 0.8s;
+    }
+
+    .panel h3 {
+      position: absolute;
+      margin: 0;
+      font-size: 24px;
+      bottom: 20px;
+      left: 20px;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      padding: 0 8px;
+    }
+
+    .panel.active {
+      flex: 10;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .panel.active h3 {
+      opacity: 1;
+      transition: opacity 1s 0.8s;
+    }
+
+    /* Ẩn bớt phần tử khi màn hình nhỏ */
+    @media (max-width: 620px) {
+      .panel:nth-of-type(4),
+      .panel:nth-of-type(5) {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <section class="slideImg">
+      <div class="container">
+        <div
+          class="panel"
+          style="background-image: url(/assets/imgs/components/slide1.jpg)"
+        >
+          <h3>ThuyDuongCosmetic</h3>
+        </div>
+        <div
+          class="panel"
+          style="background-image: url(/assets/imgs/components/slide2.jpg)"
+        >
+          <h3>ThuyDuongCosmetic</h3>
+        </div>
+        <div
+          class="panel active"
+          style="background-image: url(/assets/imgs/components/slide3.jpg)"
+        >
+          <h3>ThuyDuongCosmetic</h3>
+        </div>
+        <div
+          class="panel"
+          style="background-image: url(/assets/imgs/components/slide4.jpg)"
+        >
+          <h3>ThuyDuongCosmetic</h3>
+        </div>
+        <div
+          class="panel"
+          style="background-image: url(/assets/imgs/components/slide5.jpg)"
+        >
+          <h3>ThuyDuongCosmetic</h3>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const panel = document.querySelectorAll(".panel");
+
+      function removeActive() {
+        // duyệt qua từng phần tử panel
+        panel.forEach((event) => {
+          // xóa class
+          event.classList.remove("active");
+        });
+      }
+
+      panel.forEach((event) => {
+        // xuất giá trị event để xem
+        console.log(event);
+        // lắng nghe sk click
+        event.addEventListener("click", () => {
+          // hàm xóa active
+          removeActive();
+          // thêm active
+          event.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

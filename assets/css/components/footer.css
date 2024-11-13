@@ -1,0 +1,131 @@
+/* FONT */
+* {
+  font-family: Arial, sans-serif;
+}
+/* Line Height */
+.main-footer {
+  line-height: 1.7rem;
+  flex-wrap: wrap;
+}
+.footer2 {
+  line-height: 2.4rem;
+}
+
+/* Tổng */
+.footer-wrapper1 {
+  display: flex;
+  width: 100%;
+}
+
+.footer-wrapper2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ft-heading {
+  font-size: 1.4rem;
+}
+
+.ft-logo_img {
+  width: 200px;
+  height: 160px;
+}
+
+.footer1 {
+  background: linear-gradient(90deg, #f6f6f6, #efefef);
+  padding: 10px 30px;
+}
+
+.footer2 {
+  padding: 10px 30px;
+}
+
+.footer-wrapper2 {
+  background: linear-gradient(90deg, #ffdfeb7e, #efefef);
+  padding: 0px 50px;
+}
+
+/* Title tổng */
+
+.ft-item_title {
+  font-size: 15px;
+}
+
+/* Title location, info */
+.ft-item_des {
+  margin-bottom: 20px;
+}
+.ft-location_title,
+.ft-phonenumber_title,
+.ft-email_title {
+  font-size: 1.1rem;
+}
+
+/* image mxh */
+.ft-logo_info {
+  cursor: pointer;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  right: 20px;
+}
+
+.logo-info_wrapper_ins {
+  width: 70px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.logo-info_wrapper_shoppe,
+.logo-info_wrapper_tiki,
+.logo-info_wrapper_zalo {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.logo-info_wrapper_tiki,
+.logo-info_wrapper_zalo {
+  margin-left: 21px;
+}
+
+/* Hiệu ứng hover khi người dùng di chuột vào các logo */
+.logo-info_wrapper_ins:hover,
+.logo-info_wrapper_shoppe:hover,
+.logo-info_wrapper_tiki:hover,
+.logo-info_wrapper_zalo:hover {
+  transform: scale(1.1); /* Phóng to logo khi hover */
+}
+
+/* Input địa chỉ email */
+.ft-input {
+  border: none;
+  outline: none;
+  padding: 12px 12px;
+  border-start-start-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.btn_register {
+  border: none;
+  outline: none;
+  padding: 12px 12px;
+  background-color: #ee3355;
+  border-start-end-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Cách thức thanh toán */
+.pay-img {
+  width: 70px;
+  height: 60px;
+  margin: 0 6px;
+}
+
+.pay-wrapper .ft-item_title {
+  font-weight: 550;
+}

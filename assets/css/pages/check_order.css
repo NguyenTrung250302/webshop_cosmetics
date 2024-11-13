@@ -1,0 +1,25 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+a {
+  color: rgb(17, 16, 16);
+  transition: transform 0.3 ease;
+}
+a:hover {
+  color: #db3a55;
+}
+p,
+h1,
+h2 {
+  text-align: center;
+  margin: 5px 0;
+}
+/* container check oder */
+#container_check_order {
+  width: 100;
+  height: 500px;
+}

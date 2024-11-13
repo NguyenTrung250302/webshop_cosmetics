@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/assets/css/auth/register.css" />
+    <link rel="icon" type="image/png" href="/assets/imgs/icon_shop.ico" />
+    <script src="/jsquery-3.6.0.min/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/auth/register.js"></script>
+  </head>
+  <body>
+    <!-- Banner -->
+    <div id="top_banner"></div>
+
+    <!-- Header Menu -->
+    <div style="position: sticky; top: 0; z-index: 1000" id="header_menu"></div>
+
+    <!-- Body Register -->
+    <div id="container_register_form">
+      <div>
+        <h1>Đăng ký tài khoản</h1>
+        <p>
+          Bạn đã có tài khoản?
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="/assets/views/auth/login.html">Đăng nhập tại đây!</a>
+        </p>
+      </div>
+      <!-- Form Register -->
+      <div>
+        <form id="register-form">
+          <!-- Tên đăng nhập -->
+          <div class="form-group">
+            <label for="username">Tên đăng nhập</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Tên đăng nhập"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <!-- Mật khẩu -->
+          <div class="form-group">
+            <label for="password">Mật khẩu</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Nhập mật khẩu"
+              required
+            />
+          </div>
+
+          <!-- Xác nhận mật khẩu -->
+          <div class="form-group">
+            <label for="confirm-password">Xác nhận mật khẩu</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Nhập lại mật khẩu"
+              required
+            />
+          </div>
+
+          <!-- Button submit -->
+          <button type="submit" class="btn-submit">Đăng Ký</button>
+        </form>
+      </div>
+      <div class="or-divider"><h4>Hoặc đăng nhập bằng</h4></div>
+
+      <!-- Login with Google or Facebook -->
+      <div id="login_gg_fb"></div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+  </body>
+</html>

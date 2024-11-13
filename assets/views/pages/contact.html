@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <script src="/jsquery-3.6.0.min/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/components.js"></script>
+    <link rel="stylesheet" href="/assets/css/pages/contact.css" />
+    <link rel="icon" type="image/png" href="/assets/imgs/icon_shop.ico" />
+  </head>
+  <body>
+    <!-- banner -->
+    <div id="top_banner"></div>
+    <!-- header_menu -->
+    <div style="position: sticky; top: 0; z-index: 1000" id="header_menu"></div>
+    <!-- form contact -->
+    <div class="container-contact">
+      <div class="contact-heading">Liên Hệ Với Chúng Tôi</div>
+      <form class="form-contact" action="#">
+        <div class="form-row-contact">
+          <div class="input-data-contact">
+            <input class="user-input-contact" type="text" required />
+            <div class="underline-contact"></div>
+            <label for="">Họ và Tên</label>
+          </div>
+          <div class="input-data-contact">
+            <input class="user-input-contact" type="text" required />
+            <div class="underline-contact"></div>
+            <label for="">Số điện thoại</label>
+          </div>
+        </div>
+        <div class="form-row-contact">
+          <div class="input-data-contact">
+            <input class="user-input-contact" type="text" required />
+            <div class="underline-contact"></div>
+            <label for="">Email</label>
+          </div>
+          <div class="input-data-contact">
+            <input class="user-input-contact" type="text" required />
+            <div class="underline-contact"></div>
+            <label for="">Địa chỉ</label>
+          </div>
+        </div>
+        <div class="form-row-contact textarea">
+          <div class="input-data-contact">
+            <textarea
+              class="user-input-contact-textarea"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <div class="underline-contact"></div>
+            <label for="">Viết ý kiến của bạn</label>
+          </div>
+        </div>
+        <div class="form-row-contact submit-contact">
+          <div class="input-data-contact">
+            <input class="btn-submit-contact" type="submit" value="Gửi" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- footer -->
+    <div id="footer"></div>
+  </body>
+</html>

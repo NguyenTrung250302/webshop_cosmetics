@@ -1,0 +1,90 @@
+/* Reset & general styling */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: rgb(17, 16, 16);
+  transition: transform 0.3s ease;
+}
+
+a:hover {
+  color: #db3a55;
+}
+
+p,
+h1,
+h2 {
+  text-align: center;
+  margin: 5px 0;
+}
+
+/* Form Register */
+#container_register_form {
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  background-color: #fdfeffec;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* form register */
+.form-group {
+  margin: 15px 15px;
+  width: 400px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-submit {
+  width: 50%;
+  padding: 10px;
+  background: #4e54c8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: grid;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.btn-submit:hover {
+  background: #db3a55;
+}
+
+/* Or Divider */
+.or-divider {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 14px;
+  color: #888;
+  position: relative;
+}

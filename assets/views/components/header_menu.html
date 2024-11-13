@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>header_menu</title>
+    <script src="/jsquery-3.6.0.min/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/components.js"></script>
+  </head>
+  <style>
+    #contailer_header_menu {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+      background-color: rgb(255, 255, 255);
+    }
+
+    #logo_img {
+      width: 100px;
+      height: auto;
+    }
+  </style>
+  <body>
+    <header id="contailer_header_menu">
+      <!-- logo menu header -->
+      <a href="/home_page.html">
+        <img
+          id="logo_img"
+          src="/assets/imgs/components/logo_my_pham.jpg"
+          alt="Logo webshop"
+        />
+      </a>
+
+      <!-- search header -->
+      <div id="search"></div>
+
+      <!-- right menu header -->
+      <div id="right_menu_header"></div>
+    </header>
+  </body>
+</html>
