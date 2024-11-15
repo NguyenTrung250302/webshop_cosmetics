@@ -5,6 +5,7 @@ $(document).ready(function () {
 
     // Lấy dữ liệu từ các trường input
     var username = $("#username").val();
+    var username = $("#fulname").val();
     var email = $("#email").val();
     var password = $("#password").val();
     var confirmPassword = $("#confirm-password").val();
@@ -12,6 +13,7 @@ $(document).ready(function () {
     // Kiểm tra tính hợp lệ của dữ liệu
     if (
       username === "" ||
+      fullname === "" ||
       email === "" ||
       password === "" ||
       confirmPassword === ""

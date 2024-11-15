@@ -6,7 +6,7 @@ $(document).ready(function () {
     }
   }
 
-  // Tải các component
+  // Tải các component views
   // top banner
   loadComponent("#top_banner", "/assets/views/components/top_banner.html");
   // header menu
@@ -15,7 +15,10 @@ $(document).ready(function () {
   loadComponent("#categories", "/assets/views/components/categories.html");
   // footer
   loadComponent("#footer", "/assets/views/components/footer.html");
+  // form product
+  loadComponent("#form_product", "/assets/views/components/form_product.html");
 
+  // -------------------------------------------------------------------------
   // component feature
   loadComponent("#slider", "/assets/views/components/feature/slider.html");
   loadComponent("#search", "/assets/views/components/feature/search.html");

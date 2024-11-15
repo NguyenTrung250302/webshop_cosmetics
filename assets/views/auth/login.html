@@ -25,7 +25,6 @@
           <a href="/assets/views/auth/register.html">đăng ký tại đây!</a>
         </p>
       </div>
-      <!-- form group -->
       <div>
         <div class="form-group">
           <label for="username">Tên đăng nhập</label>
@@ -47,36 +46,79 @@
             required
           />
         </div>
-        <p>Quên mật khẩu? <a style="color: rgb(255, 8, 0);" href="">nhấn vào đây!</a></h5>
-        <button id="login-button" type="submit" class="btn-submit">Đăng Nhập</button>
+        <p>Quên mật khẩu? <a id="forgot-link" href="#">nhấn vào đây!</a></p>
+        <button id="login-button" type="submit" class="btn-submit">
+          Đăng Nhập
+        </button>
       </div>
-      <div class="or-divider"><h4>Hoặc đăng nhập bằng</h3></div>
-        <!-- login gg or fb -->
-        <div id="login_gg_fb"></div>
+      <div class="or-divider"><h4>Hoặc đăng nhập bằng</h4></div>
+      <div id="login_gg_fb"></div>
     </div>
     <!-- quên mật khẩu -->
-<div id="container_form_forgot_password" style="display: none;">
-  <div>
-    <h1>Lấy lại mật khẩu</h1>
-    <p>Vui lòng nhập email để khôi phục mật khẩu</p>
-  </div>
-  <div class="form-group">
-    <label for="forgot-email">Email</label>
-    <input
-      type="email"
-      id="forgot-email"
-      name="email"
-      placeholder="Nhập email của bạn"
-      required
-    />
-  </div>
-  <button type="submit" class="btn-submit">Gửi yêu cầu</button>
-  <p>
-    <a id="back-to-login" href="#" style="color: rgb(255, 8, 0);">
-      Quay lại đăng nhập
-    </a>
-  </p>
-</div>
+    <div id="container_form_forgot_password" style="display: none">
+      <div>
+        <h1>Lấy lại mật khẩu</h1>
+        <p>Vui lòng nhập email để khôi phục mật khẩu</p>
+      </div>
+      <div class="form-group">
+        <label for="forgot-email">Email</label>
+        <input
+          type="email"
+          id="forgot-email"
+          name="email"
+          placeholder="Nhập email của bạn"
+          required
+        />
+      </div>
+      <button id="submit-forgot" type="submit" class="btn-submit">
+        Gửi yêu cầu
+      </button>
+      <p>
+        <a id="back-to-login" href="#" style="color: rgb(255, 8, 0)">
+          Quay lại đăng nhập
+        </a>
+      </p>
+    </div>
+    <!-- Form Nhập mã xác nhận -->
+    <div id="reset_password_form" style="display: none">
+      <div>
+        <h1>Khôi phục mật khẩu</h1>
+        <p>Hãy nhập mã xác nhận từ email và tạo mật khẩu mới</p>
+      </div>
+      <div class="form-group">
+        <label for="verification-token">Mã xác nhận</label>
+        <input
+          type="text"
+          id="verification-token"
+          name="verification_token"
+          placeholder="Nhập mã xác nhận"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="new-pass">Mật khẩu mới</label>
+        <input
+          type="password"
+          id="new-pass"
+          name="new_pass"
+          placeholder="Nhập mật khẩu mới"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="repeat-pass">Xác nhận mật khẩu</label>
+        <input
+          type="password"
+          id="repeat-pass"
+          name="repeat_pass"
+          placeholder="Nhập lại mật khẩu mới"
+          required
+        />
+      </div>
+      <button id="confirm-reset" type="submit" class="btn-submit">
+        Xác nhận
+      </button>
+    </div>
     <!-- footer -->
     <div id="footer"></div>
   </body>

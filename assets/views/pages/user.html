@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>user</title>
+    <title>User Profile</title>
     <script src="/jsquery-3.6.0.min/jquery-3.6.0.min.js"></script>
     <script src="/assets/js/components.js"></script>
     <link rel="icon" type="image/png" href="/assets/imgs/icon_shop.ico" />
@@ -12,14 +12,44 @@
   <body>
     <!-- banner -->
     <div id="top_banner"></div>
+
     <!-- header_menu -->
     <div style="position: sticky; top: 0; z-index: 1000" id="header_menu"></div>
+
     <!-- display profile user -->
     <div class="container_form_profile">
       <!-- nav -->
-      <div class="navigation_profile"><h1>nav</h1></div>
+      <div class="navigation_profile">
+        <h1>Navigation</h1>
+        <ul>
+          <li><a href="#" data-content="profile">My Profile</a></li>
+          <li><a href="#" data-content="orders">My Orders</a></li>
+          <li><a href="#" data-content="logout">Logout</a></li>
+        </ul>
+      </div>
+
       <!-- main profile user -->
-      <div class="main_profile"><h1>profile</h1></div>
+      <div class="main_profile">
+        <!-- Nội dung profile sẽ được load vào đây ngay khi trang được tải -->
+      </div>
     </div>
+
+    <script>
+      $(document).ready(function () {
+        // Tải ngay nội dung profile vào main_profile khi trang được tải
+        $(".main_profile").load("/assets/views/pages/profile_user.html");
+
+        // Khi người dùng click vào một liên kết trong nav
+        $(".navigation_profile a").click(function (e) {
+          e.preventDefault(); // Ngừng hành động mặc định của thẻ <a>
+
+          // Lấy giá trị của thuộc tính 'data-content' từ thẻ <a>
+          var contentId = $(this).data("content");
+
+          // Tải nội dung từ các file HTML vào phần nội dung chính
+          $(".main_profile").load(contentId + ".html");
+        });
+      });
+    </script>
   </body>
 </html>

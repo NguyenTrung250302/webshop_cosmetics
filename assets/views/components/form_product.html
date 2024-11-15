@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/assets/js/components/form_product.js"></script>
+    <title>form product</title>
+  </head>
+  <style>
+    /* Reset body */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    /* Container chứa tất cả các form */
+    #form-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Form generic */
+    .generic-form {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: calc(33% - 20px); /* Responsive */
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Label */
+    .form-label-1,
+    .form-label-2 {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    /* Input fields */
+    .form-input-1,
+    .form-input-2 {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    /* Button xóa */
+    .delete-button {
+      background-color: #ff4d4f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .delete-button:hover {
+      background-color: #d9363e;
+    }
+
+    /* Thẻ ngăn cách */
+    hr {
+      width: 100%;
+      margin: 10px 0;
+      border: 0;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+
+  <body>
+    <!-- form product -->
+    <div id="form-template" style="display: none">
+      <div class="generic-form">
+        <label class="form-label-1"></label>
+        <input type="text" class="form-input-1" readonly />
+
+        <label class="form-label-2"></label>
+        <input type="text" class="form-input-2" readonly />
+
+        <button class="delete-button">Xóa</button>
+        <hr />
+      </div>
+    </div>
+    <!-- hiển thị danh sách  form-->
+    <div id="form-container"></div>
+  </body>
+</html>
