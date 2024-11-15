@@ -5,8 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>admin</title>
     <link rel="icon" type="image/png" href="/assets/imgs/icon_shop.ico" />
+    <script src="./jsquery-3.6.0.min/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/admin/admin.js" defer></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="/assets/css/components/navigation.css" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/admin/admin.css" />
   </head>
   <body>
-    <h1>admin</h1>
+    <nav class="navi-sidebar navi-close">
+      <header>
+        <div class="navi-img-text">
+          <span class="navi-img">
+            <img src="/assets/imgs/icon_shop.ico" alt="LOGO" />
+          </span>
+
+          <div class="navi-text navi-header-text">
+            <span class="navi-name">--ADMIN--</span>
+            <span class="navi-profession">ThuyDuongshop</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="navi-menu-bar">
+        <div class="navi-menu">
+          <ul class="navi-menu-link">
+            <li class="navi-nav-link">
+              <a href="/home_page.html">
+                <i class="bx bx-home navi-icon"></i>
+                <span class="navi-text navi-nav-text">Quay về trang chủ</span>
+              </a>
+            </li>
+            <li class="navi-nav-link">
+              <a href="#">
+                <i class="bx bx-bar-chart navi-icon"></i>
+                <span class="navi-text navi-nav-text">Thống kê</span>
+              </a>
+            </li>
+            <li class="navi-nav-link">
+              <a href="#">
+                <i class="bx bx-user navi-icon"></i>
+                <span class="navi-text navi-nav-text">Quản lý người dùng</span>
+              </a>
+            </li>
+            <li class="navi-nav-link">
+              <a href="#">
+                <i class="bx bx-cart navi-icon"></i>
+                <span class="navi-text navi-nav-text">Quản lý sản phẩm</span>
+              </a>
+            </li>
+            <li class="navi-nav-link">
+              <a href="#">
+                <i class="bx bx-home navi-icon"></i>
+                <span class="navi-text navi-nav-text">Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navi-bottom-content">
+          <li class="navi-nav-link">
+            <a href="/assets/views/auth/login.html">
+              <i class="bx bx-log-out navi-icon"></i>
+              <span class="navi-text navi-nav-text">Đăng xuất</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <section class="main-home">
+      <div class="main-heading">Dashboard</div>
+    </section>
   </body>
 </html>

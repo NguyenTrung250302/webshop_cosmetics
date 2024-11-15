@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* color */
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #695cfe;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+
+  /* Transition */
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Css Sidebar*/
+.navi-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding: 10px 14px;
+  background-color: var(--sidebar-color);
+  transition: var(--tran-03);
+  z-index: 100;
+}
+
+/* Css Resuable */
+.navi-sidebar .navi-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: var(--tran-04);
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.navi-text .img {
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.navi-sidebar li {
+  height: 50px;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navi-sidebar li .navi-icon {
+  min-width: 60px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navi-sidebar li .navi-icon,
+.navi-sidebar li .navi-text {
+  color: var(--text-color);
+  transition: var(--tran-02);
+}
+
+.navi-sidebar header {
+  position: relative;
+}
+
+.navi-sidebar .navi-img-text img {
+  width: 40px;
+  border-radius: 6px;
+}
+
+.navi-sidebar header .navi-img-text {
+  display: flex;
+  align-items: center;
+}
+
+header .navi-img-text .navi-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.navi-header-text .navi-name {
+  font-weight: 600;
+}
+
+.navi-header-text .navi-profession {
+  margin-top: -2px;
+}
+
+.navi-sidebar header .navi-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  height: 25px;
+  width: 25px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--sidebar-color);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.navi-sidebar .navi-search-box {
+  background-color: var(--primary-color-light);
+}
+
+.navi-search-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-color-light);
+}
+
+.navi-sidebar li a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  transition: var(--tran-04);
+}
+
+.navi-sidebar li a:hover {
+  background-color: var(--primary-color);
+}
+
+.navi-sidebar li :hover .navi-icon,
+.navi-sidebar li :hover .navi-text {
+  color: var(--sidebar-color);
+}
+
+.navi-sidebar .navi-menu-bar {
+  height: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navi-sidebar .navi-menu {
+  margin-top: 35px;
+}
+
+.navi-menu-bar .navi-mode {
+  background-color: var(--primary-color-light);
+  position: relative;
+}
+
+.navi-menu-bar .navi-moon-sun {
+  height: 50px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.navi-menu-bar .navi-mode i {
+  position: absolute;
+}
+
+.navi-menu-bar .navi-mode i.navi-icon-sun {
+  opacity: 0;
+}
+
+.navi-menu-bar .navi-mode .navi-toggle-switch {
+  right: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 60px;
+}
+
+.navi-toggle-switch .navi-switch {
+  position: relative;
+  height: 22px;
+  width: 44px;
+  border-radius: 25px;
+  background: var(--toggle-color);
+  cursor: pointer;
+}
+
+.navi-switch::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  background: var(--sidebar-color);
+  transition: var(--tran-03);
+}
+
+/* Background Mode */
+body {
+  background-color: var(--body-color);
+  transition: var(--tran-02);
+}
+
+/* Home */
+.main-home {
+  position: relative;
+  height: 100vh;
+  left: 250px;
+  width: calc(100% - 250px);
+  background: var(--body-color);
+  transition: var(--tran-05);
+}
+
+.main-home .main-heading {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 8px 40px;
+}
